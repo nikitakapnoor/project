@@ -9,3 +9,36 @@ tot=a+b;
 document.write(tot)
 
 </script>
+<p>Dynamic calculation</p>
+<p> no1:<input type="text"  id="num1"></p>
+<p> no1:<input type="text"  id="num2"></p>
+<input type="button" value="check" onclick="check()">
+<script>
+    function check()
+    {
+        var a=document.getElementById("num1").value;
+        var a=document.getElementById("num2").value;
+        var sum=Number(a)+Number(b);
+        alert("total:"+sum);
+
+
+    }
+</script>
+<p>alert()</p>
+<button onclick="alert('iamalert')">clickme</button>
+<p>conform</p>
+<button onclick="confirm('iam confirm')">conform</button>
+<p>prompt</p>
+<button onclick="prompt('iam prompt')">clickme</button>
+<p>prompt example for vote</p>
+<button onclick="vote()">check voting range</button>
+<script>
+    function vote(){
+        var age=prompt("enter your age");
+        if(age<18){
+            alert('not eligible');
+        } else{
+            alert('eligible');
+        }
+    }
+</script>
